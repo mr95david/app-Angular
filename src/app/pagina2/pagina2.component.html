@@ -1,0 +1,17 @@
+<section class="component">
+    <div class="component-section">
+      <form class="component-section--form">
+        <h2 class="titulo">Formulario</h2>
+        <label for="nombre">
+          <span>Nombre: </span>
+          <input type="text" [(ngModel)]="Nombre" name="nombre" autocomplete="off" placeholder="Nombre*">
+        </label>
+        <label for="apellido">
+          <span>Apellido: </span>
+          <input type="text" [(ngModel)]="Apellido" name="apellido" autocomplete="off" placeholder="Apellido*">
+        </label>
+        <p class="text-response">Hola mi nombre es: <b>{{Nombre}} {{Apellido}}</b></p>
+        <button class="alert-button" (click)="showAlert()">Mostrar alerta</button>
+      </form>
+    </div>
+  </section>
